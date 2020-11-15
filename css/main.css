@@ -215,6 +215,15 @@ header .navbar.mobile .navbar-top {
   padding: 0px 18px 0px 18px;
 }
 
+header .navbar.mobile .navbar-top .navbar-menu .logo {
+  fill: #fff;
+  cursor: pointer;
+}
+
+header .navbar.mobile .navbar-top .navbar-menu .logo:hover {
+  opacity: 0.7;
+}
+
 header .navbar.mobile .navbar-top .navbar-menu__content {
   position: absolute;
   top: 63px;
