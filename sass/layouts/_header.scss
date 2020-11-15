@@ -19,6 +19,7 @@ header {
                         left: 0; 
                         display: none;
                         padding: 0px 18px 0px 18px;
+                        z-index: 5;
 
                         &.open {
                             display: block;
