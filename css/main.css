@@ -628,6 +628,10 @@ footer .footer ul .name-a span:hover {
   }
 }
 
+.main.open {
+  margin-top: 330px;
+}
+
 .page-content {
   display: -webkit-box;
   display: -ms-flexbox;

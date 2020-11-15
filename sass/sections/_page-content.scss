@@ -1,3 +1,7 @@
+.main.open {
+    margin-top: 330px;
+}
+
 .page-content {
     display: flex;
     flex-direction: column;
@@ -238,10 +242,6 @@
                         font-weight: 600;
                         cursor: pointer;
 
-                        // &:focus {
-                        //     // background-color: red !important;
-                        // }
-
                         svg {
                             fill: $secondary-color;
                         }
@@ -258,6 +258,7 @@
 
 
 @include media-md{
+
     .border-over {
         position: absolute;
         content: '';

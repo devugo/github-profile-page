@@ -96,7 +96,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main" class="main">
         <div class="border-over">
            
         </div>
@@ -261,6 +261,7 @@
 
     getId('hamburger').addEventListener('click', function(){
         getId('navbar-menu__content').classList.toggle('open')
+        getId('main').classList.toggle('open')
     });
 
     getId('dropdown-btn').addEventListener('click', function() {
