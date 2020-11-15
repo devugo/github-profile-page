@@ -1,7 +1,7 @@
 .section-nav {
     border-bottom: 1px solid $grey-color;
     
-    padding: 0px 18px 6px 18px;
+    padding: 0px 18px 0px 18px;
     
     .content {
         position: relative;
@@ -9,6 +9,11 @@
         .nav {
             // overflow-x: scroll;
             // width: 800px;
+            // background-color: red;
+            // width: 200px;
+            // overflow: auto;
+            display: flex;
+            overflow: auto;
             .item{
                 padding: 12px 16px;
                 font-size: 14px;
@@ -59,8 +64,9 @@
     }
 }
 
-@media screen and (min-width: 768px){
+@include media-md{
     .section-nav {
         padding: 0px 32px 0px 32px;
+        border-bottom: 0px;
     }
 }

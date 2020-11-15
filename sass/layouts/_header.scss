@@ -42,6 +42,23 @@ header {
                                     color: rgb(190, 201, 203);
                                     font-size: 13px;
                                 }
+
+                                // Added new input styles from general
+                                width: 100%;
+                                border: 1px solid grey;
+                                margin-bottom: 20px;
+                            
+                                &:hover, 
+                                &:active,
+                                &:focus
+                                {
+                                    outline:0px !important;
+                                    -webkit-appearance:none;
+                                    box-shadow: none !important;
+                                    border: 1.5px solid $secondary-color;
+                                }
+
+                                //  End
     
                                 &:focus{
                                     background-color: white;
@@ -310,6 +327,7 @@ header {
                             
                             .header-form {
                                 input {
+                                    width: 280px;
                                     &:focus{
                                         width: 310px;
                                     }

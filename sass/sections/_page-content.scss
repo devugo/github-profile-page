@@ -20,6 +20,7 @@
                     border: 1px solid $grey-color;
                     width: 100px;
                     height: 100px;
+                    cursor: pointer;
                     // width: 100%;
                     // height: 100%;
                 }
@@ -27,16 +28,34 @@
                 .status-icon {
                     position: absolute;
                     bottom: 40px;
-                    right: 10px;
+                    left: 85%;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    // justify-content: center;
                     padding: 8px 8px 8px 8px;
                     border: 1px solid $grey-color;
                     background-color: $white;
                     border: 1px solid $grey-color;
                     border-radius: 2em;
-                    box-shadow: 0 1px 0 rgba(27,31,35,0.04)
+                    box-shadow: 0 1px 0 rgba(27,31,35,0.04);
+                    cursor: pointer;
+
+                    a{
+                        font-size: 12px;
+                        margin-left: 5px;
+                        display: none;
+                    }
+
+                    &:hover {
+                        width: 100px;
+                        svg {
+                            fill: $hover-color;
+                        }
+                        a{
+                            color: $hover-color;
+                            display: inline;
+                        }
+                    }
                 }
             }
 
@@ -116,6 +135,10 @@
                     border-radius: 6px;
                     outline: none;
                     box-shadow: inset 0 1px 0 rgba(225, 228, 232, 0.2);
+
+                    &:focus {
+                        border: 1px solid #0366d6;
+                    }
                 }
             }
 
@@ -135,7 +158,7 @@
                     align-items: center;
                     justify-content: space-between;
                     .brief {
-                        max-width: 220px;
+                        max-width: 250px;
                         .title {
                             a{
                                 font-size: 20px;
@@ -215,9 +238,9 @@
                         font-weight: 600;
                         cursor: pointer;
 
-                        &:focus {
-                            // background-color: red !important;
-                        }
+                        // &:focus {
+                        //     // background-color: red !important;
+                        // }
 
                         svg {
                             fill: $secondary-color;
@@ -234,10 +257,47 @@
 }
 
 
-@media screen and (min-width: 768px){
+@include media-md{
+    .border-over {
+        position: absolute;
+        content: '';
+        margin-top: 86px;
+        border-top: 1px solid $grey-color;
+        height: 5px;
+        width: 100%;
+    }
     .page-content {
-        .page-details {
-            padding: 0px 32px 0px 32px;
+        flex-direction: row;
+        // background-color: red;
+        max-width: 1280px;
+        padding: 0px 20px 0px 20px;
+        margin: 0 auto;
+
+        .profile-details {
+            // padding: 0px 32px 0px 32px;
+            width: 27%;
+            margin-top: 50px;
+            
+            .basic-details {
+                flex-direction: column;
+                
+                &__photo {
+
+                    .avatar {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &__name {
+                    margin-left: 0px;
+                }
+            }
+        }
+
+        .repositories {
+            // background-color: purple;
+            width: 73%;
         }
     }
 }
