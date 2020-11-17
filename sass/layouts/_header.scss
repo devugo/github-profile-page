@@ -14,10 +14,10 @@ header {
                 .navbar-menu {
 
                     .logo {
-                        fill: #fff;
+                        fill: $white;
                         cursor: pointer;
                         &:hover {
-                            opacity: 0.7;
+                            opacity: $hover-opacity;
                         }
                     }
 
@@ -69,8 +69,7 @@ header {
                                 //  End
     
                                 &:focus{
-                                    background-color: white;
-                                    // border-color: #0366d6;
+                                    background-color: $white;
 
                                     & + img {
                                         display: none;
@@ -103,7 +102,7 @@ header {
                                     text-decoration: none;
 
                                     &:hover {
-                                        opacity: 0.7;
+                                        opacity: $hover-opacity;
                                     }
 
 
@@ -118,6 +117,9 @@ header {
 
                 .navbar-right {
                     a {
+                        &:hover {
+                            opacity: $hover-opacity;
+                        }
                         span.blue-noti {
                             position: absolute;
                             top: -8px;
@@ -125,10 +127,10 @@ header {
                             z-index: 2;
                             width: 14px;
                             height: 14px;
-                            color: white;
+                            color: $white;
                             background-image: linear-gradient(#54a3ff,#006eed);
                             background-clip: padding-box;
-                            border: 2px solid #24292e;
+                            border: 2px solid $primary-color;
                             border-radius: 50%;
                         }
                     }
@@ -208,7 +210,7 @@ header {
                             cursor: pointer;
 
                             &-icons:hover {
-                                opacity: 0.7;
+                                opacity: $hover-opacity;
                             }
 
                             &.repo {
@@ -243,7 +245,7 @@ header {
                                 width: 180px;
                                 margin-top: 2px;
                                 list-style: none;
-                                background-color: white;
+                                background-color: $white;
                                 background-clip: padding-box;
                                 border: 1px solid $grey-color;
                                 border-radius: 6px;
@@ -272,13 +274,40 @@ header {
 
                                     &:hover {
                                         color: $white;
-                                        background-color: #0366d6;
+                                        background-color: $text-link-color;
                                         text-decoration: none;
                                         outline: none;
                                     }
                                     &.signed:hover {
                                         background-color: inherit;
                                         color: inherit;
+                                    }
+                                    &.status {
+                                        margin: 10px 15px;
+                                        border: 1px solid $grey-color;
+                                        display: flex;
+                                        align-items: center;
+                                        border-radius: 6px;
+
+                                        &:hover{
+                                            background-color: inherit;
+
+                                            span {
+                                                color: $hover-color;
+                                            }
+
+                                            svg {
+                                                fill: $hover-color;
+                                            }
+                                        }
+                                        svg {
+                                            fill: $secondary-color;
+                                        }
+                                        span {
+                                            margin-left: 5px;
+                                            color: $primary-color;
+                                            font-size: 12px;
+                                        }
                                     }
                                 }
                             }

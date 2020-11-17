@@ -7,11 +7,6 @@
         position: relative;
        
         .nav {
-            // overflow-x: scroll;
-            // width: 800px;
-            // background-color: red;
-            // width: 200px;
-            // overflow: auto;
             display: flex;
             overflow: auto;
             .item{
@@ -26,10 +21,9 @@
                 border-bottom: 2px solid transparent;
                 transition: border-bottom-color .36s ease-in;
                 text-decoration: none;
-                // width: 112px;
 
                 &:hover {
-                    color: #24292e;
+                    color: $primary-color;
                     text-decoration: none;
                     border-bottom-color: #d1d5da;
                     outline: 1px dotted transparent;
@@ -40,8 +34,8 @@
 
                 &.active {
                     font-weight: 600;
-                    color: #24292e;
-                    border-bottom-color: #f9826c;
+                    color: $primary-color;
+                    border-bottom-color: $orange-bottom-border;
                     outline: 1px dotted transparent;
                     outline-offset: -1px;
                 }
@@ -53,7 +47,7 @@
                 font-size: 12px;
                 font-weight: 500;
                 line-height: 18px;
-                color: #24292e;
+                color: $primary-color;
                 text-align: center;
                 background-color: rgba(209,213,218,0.5);
                 border: 1px solid transparent;
