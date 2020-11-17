@@ -957,7 +957,15 @@ footer .footer ul .name-a span:hover {
   margin-left: 3px;
 }
 
+.page-content .repositories-panel__list .repository button:focus {
+  background-color: #f3f5f5;
+  outline: none;
+}
+
 @media screen and (min-width: 768px) {
+  .main.open {
+    margin-top: 0px;
+  }
   .border-over {
     position: absolute;
     content: '';

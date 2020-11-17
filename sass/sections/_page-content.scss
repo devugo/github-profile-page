@@ -274,6 +274,10 @@
                         span {
                             margin-left: 3px;
                         }
+                        &:focus{
+                            background-color: $btn-bg-focus-color;
+                            outline: none;
+                        }
                     }
                 }
             }
@@ -283,7 +287,9 @@
 
 
 @include media-md{
-
+    .main.open {
+        margin-top: 0px;
+    }
     .border-over {
         position: absolute;
         content: '';

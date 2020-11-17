@@ -1,6 +1,3 @@
-const DEVUGOTK = "bearer 2b3d8dc84d8e04ac0ca6d6da87c412a3ff69ed62";
-
-
 //  Get Page data
 const getData = async () => {
     let response = await fetch("https://api.github.com/graphql", {
