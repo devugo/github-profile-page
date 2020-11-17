@@ -37,4 +37,9 @@ const formatUpdatedTime = (datetime) => {
     return `Updated on ${lastUpdatedMonth} ${lastUpdatedDate}`;
 }
 
-const DEVUGOTK = "bearer 1cec4b1e41fd200c2f0506b9b9ba6c3ab7add7b0";
+const TOKEN = "b0d01ee2399387b39d272d997a5f56440924b26d-";
+const DEVUGOTK = `bearer ${TOKEN}`;
+
+if(TOKEN == ""){
+    alert("Please, input a token in js/constants.js file")
+}
