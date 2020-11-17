@@ -3,7 +3,7 @@ const getData = async () => {
     let response = await fetch("https://api.github.com/graphql", {
         method: "POST", 
         headers: {
-            Authorization: DEVUGOTK
+            Authorization: DEVUGOTK.replaceAll('-', '')
         },
         body: JSON.stringify(
             {
@@ -228,7 +228,7 @@ const getTotalRepoCount = async () => {
     let response = await fetch("https://api.github.com/graphql", {
         method: "POST", 
         headers: {
-            Authorization: DEVUGOTK
+            Authorization: DEVUGOTK.replaceAll('-', '')
         },
         body: JSON.stringify(
             {
