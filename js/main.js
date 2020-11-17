@@ -1,4 +1,4 @@
-const DEVUGOTK = "bearer 99273c66f49397194ce085750da2bd60597f2483";
+const DEVUGOTK = "bearer 2b3d8dc84d8e04ac0ca6d6da87c412a3ff69ed62";
 
 
 //  Get Page data
@@ -89,7 +89,7 @@ const composeRepoData = (repositories) => {
     for(var i = 0; i < repositories.length; i++){
         let repository = repositories[i];
 
-        console.log(repository);
+        // console.log(repository);
 
         // TOtal number of watchers
         let totalStarCount = repository.watchers.totalCount;
