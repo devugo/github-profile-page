@@ -37,7 +37,7 @@ const formatUpdatedTime = (datetime) => {
     return `Updated on ${lastUpdatedMonth} ${lastUpdatedDate}`;
 }
 
-const TOKEN = "b0d01ee2399387b39d272d997a5f56440924b26d-";
+const TOKEN = "";
 const DEVUGOTK = `bearer ${TOKEN}`;
 
 if(TOKEN == ""){
