@@ -7,24 +7,21 @@ A github profile page showing `20 repositores` of an authenticated user using th
 ### Preview Images
 
 #### Desktop View
-![Desktop View](https://test.devugo.com/images/preview-1.png)
+![Desktop View](https://github-profile-by-devugo.netlify.app/images/preview-1.png)
 
 #### Mobile View
-![Mobile View](https://test.devugo.com/images/preview-2.png)
+![Mobile View](https://github-profile-by-devugo.netlify.app/images/preview-2.png)
 
 #### Reponsive Navbar
-![Responsive Navbar](https://test.devugo.com/images/preview-3.png)
+![Responsive Navbar](https://github-profile-by-devugo.netlify.app/images/preview-3.png)
 
 
 ### Live URL
-- [Demo](https://test.devugo.com/).
+- [Demo](https://github-profile-by-devugo.netlify.app).
 
 
 
 ### HOW TO LOAD LOCALLY
 - Run `git clone https://github.com/devugo/github-profile-page.git` on your terminal/cmd to pull the project
-- Go into the project folder and navigate to `js/constants.js`, input your personnal token key on line 40 as the value of `TOKEN`
+- To view a user's profile page. Go into the project folder cloned above and navigate to `js/constants.js`, input the user's personnal token key on `line 40` as the value of `TOKEN`
 - Open up `index.html` on your browser and you are good!
-
-### Contributor
-- [devugo, fullstack developer](https://devugo.com).

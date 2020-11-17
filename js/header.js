@@ -25,7 +25,7 @@ getById('dropdown-btn-2').addEventListener('click', function() {
 window.onclick = function(event) {
     // console.log(event.target);
     if (!event.target.matches(['.dropdown', '.avatar', '.dropdown-icons', '.octicon-plus', '.dropdown-caret', '.dropdown-svg__path'])) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var dropdowns = getByClassName("dropdown-content");
         
         // Open dropdown body
         for (var i = 0; i < dropdowns.length; i++) {
@@ -36,7 +36,7 @@ window.onclick = function(event) {
         }
 
         // Open dropdown caret
-        var dropdowns = document.getElementsByClassName("my-dropdown__caret");
+        var dropdowns = getByClassName("my-dropdown__caret");
         for (var j = 0; j < dropdowns.length; j++) {
             var openDropdown = dropdowns[j];
             if (openDropdown.classList.contains('open')) {
